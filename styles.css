@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px 15px;
+    background-color: rgb(69, 180, 224);
+}
+
+header input{
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(206, 240, 241);
+    border-radius: 0px 10px 0px 10px;
+    border-top: 3px solid rgb(43, 29, 168);
+    border-bottom: 3px solid rgb(43, 29, 168);
+    
+    color: #000000;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+::placeholder {
+    color: Black;
+  }
+
+body{
+    background-color: rgb(49, 155, 255);
+}
+section{
+    margin: 30px auto;
+    background-color: rgb(181, 239, 241);
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    border: 3px solid rgb(43, 29, 168);
+}
+section div{
+    margin: 10px 0px;
+    font-size: 1.5em;
+    color: #000000;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+  
+.container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    margin: 50px auto;
+    width: 90%;
+
+
+}
+
+.container > div{
+    padding: 4em 2em;
+    border: 1px solid black;
+    background-color: rgb(165, 165, 165);
+}
+
+.weather{
+    grid-row: 1/3;
+}
+
+.pressure{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.wind{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.humidity{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.sun{
+    grid-row: 1/3;
+}
