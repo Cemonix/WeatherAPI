@@ -18,8 +18,13 @@ async function FetchFunction(city){
     const res = await fetch(`${api.base}weather?q=${city}&units=metric&APPID=${api.key}`);
 
     const dataJson = await res.json();
-    
-    ProcessData(dataJson);
+
+    if(dataJson.message !== "city not found"){
+        ProcessData(dataJson);
+    }
+    else{
+        alert("Wrong city name!");
+    }
 } 
 
 function ProcessData(data){
