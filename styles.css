@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap');
 
+/* mistake not zero but auto would be better but it destroy the app*/
 *{
     margin: 0;
     padding: 0;
@@ -40,6 +41,7 @@ body{
     background-color: rgb(49, 155, 255);
 }
 section{
+    visibility: hidden;
     margin: 30px auto;
     background-color: rgb(181, 239, 241);
     text-align: center;
@@ -68,18 +70,18 @@ section div{
 }
   
 .container{
+    visibility: hidden;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     grid-template-rows: 1fr 1fr;
     text-align: center;
-    margin: 50px auto;
+    margin: 5%;
     width: 90%;
 
 
 }
 
 .container > div{
-    padding: 4em 2em;
     border: 1px solid black;
     background-color: rgb(29, 176, 187);
 }
@@ -88,12 +90,11 @@ section div{
     grid-row: 1/3;
 }
 
-.weather h2{
-    visibility: hidden;
-    margin-bottom: 25%;
+.container div h2{
+    margin: 5%;
     color: #000000;
     font-family: 'Cabin', sans-serif;
-    font-size: 30px;
+    font-size: 2.5em;
     font-weight: 300;
     text-align: center;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
@@ -103,9 +104,9 @@ section div{
 }
 
 .weather img{
-    visibility: hidden;
     width: 50%;
     height: 50%;
+    margin-bottom: 5%;
     padding: 5%;
     background-color: rgb(206, 240, 241);
     border-radius: 10px;
